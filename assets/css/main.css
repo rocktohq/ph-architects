@@ -1,0 +1,313 @@
+/* =================== Google Fonts =================== */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+
+/* =================== Reset =================== */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.body-container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+
+/* =================== Common Styles =================== */
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+.btn-primary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff900e;
+    border: 0;
+    border-radius: 8px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.text-primary {
+    color: #ff900e;
+}
+
+.text-gray {
+    color: #727272;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+
+/* =================== Header Styles =================== */
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+/* Nav */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav li {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* Banner */
+.banner {
+    margin-top: 50px;
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.banner-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 10px;
+}
+
+.banner-description {
+    margin-bottom: 10px;
+}
+
+
+/* =================== Main Section =================== */
+/* Main */
+main {
+    max-width: 1280px;
+    margin: 70px auto;
+}
+/* Teams */
+.teams-container {
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding: 0px 70px;
+}
+
+.teams-title {
+    font-size: 2.8rem;
+}
+
+/* Features Section */
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+    padding: 0px 20px;
+}
+
+.feature-content .card {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.features .section-title {
+    border-left: 5px solid #ff900e;
+    padding-left: 20px;
+}
+
+.features .feature-img img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.features .badge {
+    background-color: #ff900e;
+    border-radius: 5px;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    width: 342px;
+    position: relative;
+    bottom: 100px;
+}
+
+.badge h2 {
+    font-size: 4rem;
+}
+
+.badge p {
+    font-size: 1.5rem;
+}
+
+/* Facts Section */
+.facts {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.facts-card-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.facts-card-container .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sponsors Section */
+.sponsors {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sponsors-img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.sponsors-img-container img {
+    width: 165px;
+}
+
+
+/* =================== Footer Section =================== */
+footer {
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 40px;
+    margin-top: 40px;
+}
+
+footer .footer-text {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+/* =================== Media Query =================== */
+/* Mobile or Small Devices */
+@media screen and (max-width: 567px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    .teams-container,
+    .features,
+    .facts-card-container,
+    .sponsors-img-container {
+        flex-direction: column;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content {
+        padding: 20px;
+    }
+
+    .features .feature-img img {
+
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .features .badge {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 300px;
+    }
+
+    .teams-content,
+    .facts-card-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .facts-card-container {
+        gap: 20px;
+    }
+}
+
+/* Tablet or Medium Devices */
+@media screen and (min-width: 567px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav,
+    .teams-container,
+    .features,
+    .sponsors-img-container {
+        flex-direction: column;
+    }
+}
